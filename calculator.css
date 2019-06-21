@@ -1,0 +1,68 @@
+body {
+    background-image: linear-gradient(to right, #fab802, #f5ecd3);
+}
+
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#calculator {
+    position: relative;
+    margin: 0 auto;
+    height: 500px;
+    width: 30%;
+    background-image: linear-gradient(to right, #f2d4b3, #ff9422);
+    border: solid, 3px, #c46c07b4;
+    border-radius: 25px;
+    box-shadow: #c46c07b4 15px 15px 15px;
+    padding: 15px;
+}
+
+#display {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: #c46c07b4 inset -3px -3px 3px;
+    background-color: #f5ecd3;
+}
+
+#gridContainer {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 10px;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+#gridContainer>button {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    height: 50px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    background-color: slategrey;
+    border-radius: 25px;
+}
+
+
+.number {
+    background-image: linear-gradient(#fa73349c, #f5af8e9c);
+}
+
+.sign {
+    background-image: linear-gradient(#ffe2918e, #fcc42c9c);
+}
